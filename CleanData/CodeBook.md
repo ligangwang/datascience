@@ -1,9 +1,10 @@
 ### Code Book for tidy data set
 
-subject: The integer value ranges from 1 to 30 representing 30 volunteers conducting six activities of experimentation.
-activity: The activity variable contains string type of the six activities: WALKING
+**subject**: The integer value ranges from 1 to 30 representing 30 volunteers conducting six activities of experimentation.
+**activity**: The activity variable contains string type of the six activities: WALKING
 , WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
+**feature variables**:
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
@@ -37,4 +38,4 @@ mean(): Mean value
 std(): Standard deviation
 angle(): Angle between to vectors.
 
-All those selected variables are performed aggregated mean function per subject and activity level.
+**All those selected 79 variables are performed aggregated mean function per subject and activity level.**
